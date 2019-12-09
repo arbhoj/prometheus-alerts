@@ -5,6 +5,6 @@ groups:
     expr: max(mesos_slave_cpus_used) > 8
     for: 10m
     labels:
-      severity: page
+      severity: email
     annotations:
-      summary: High request latency
+      summary: High CPU Detected
