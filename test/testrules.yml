@@ -6,5 +6,6 @@ groups:
     for: 10m
     labels:
       severity: email
+      body: High CPU Utilization Detected 
     annotations:
       summary: High CPU Detected
