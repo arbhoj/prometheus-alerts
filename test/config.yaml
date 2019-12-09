@@ -1,0 +1,16 @@
+routes:
+  group_by: ['alertname','dcos_cluster_id','host']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 30m
+  receiver: email_notification
+
+receivers:
+- name: email_notification
+   email_configs:
+   - to: abhoj@d2iq.com
+      from: abhojtest@gmail.com:587
+      smarthost: smtp.gmail.com
+      auth_username: "abhojtest@gmail.com"
+      auth_identity: "abhojtest@gmail.com"
+      auth_password: "M@sterTest1"
