@@ -3,7 +3,7 @@ groups:
   rules:
   - alert: High CPU
     expr: max(mesos_slave_cpus_used) > 8
-    for: 10m
+    for: 1m
     labels:
       severity: email
       body: high-cpu
